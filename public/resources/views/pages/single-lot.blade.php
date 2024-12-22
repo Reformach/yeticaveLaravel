@@ -46,7 +46,7 @@
                 </div>
                 <div class="history">
                     @if($bets->count()>0)
-                        <h3>История ставок (<span>{{DB::table('bets')->where('lot_id', $lot->id)->count()}}</span>)</h3>
+                        <h3>История ставок (<span>{{$bets->count()}}</span>)</h3>
                     @else
                         <p>На данный момент ставок нет.</p>
                     @endif
